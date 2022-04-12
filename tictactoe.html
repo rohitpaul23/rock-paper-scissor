@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="head">ROCK PAPER SCISSOR</div>
+    <h1>Can you defeat the computer</h1>
+    <h2>Rules:</h2>
+    <ol>
+        <li>Both you and Computer have three weapons to choose from</li>
+        <li>Weapons are : <strong>ROCK</strong>, <strong>PAPER</strong>, and <strong>SCISSOR</strong></li>
+        <ol>
+            <li><strong>ROCK</strong> beats <strong>SCISSOR</strong></li>
+            <li><strong>PAPER</strong> beats <strong>ROCK</strong></li>
+            <li><strong>SCISSOR</strong> beats <strong>PAPER</strong></li>
+        </ol>
+        <li>Player needs to win N games before computer to defeat the computer</li>
+    </ol> 
+    <div class="getN">
+        <p>Choose the value of <strong>N</strong>
+        (Default value is 5)
+        </p>
+        <button class="but" style="color: darkslategrey; background-color: white;">5</button>
+        <button class="but">10</button>
+        <button class="but">15</button>    
+    </div>
+
+    <button class="start" >START</button>
+
+    <div class="gameTab">
+        <h2>BATTLEGROND</h2>
+        <h3>Choose your weapon</h3>
+        <img src="image/rock.png" alt="rock">
+        <img src="image/paper.png" alt="paper">
+        <img src="image/scissor.png" alt="scissor">
+        
+        <div class="container">
+            <div class="items">
+                <div class="item">
+                    <p>You Choose:</p>
+                    <div id="mytext"></div>    
+                </div>
+
+            </div>
+            <div class="scoreItems">
+                <div class="scoreCard">
+                    <div class="item" style="width: 155px;">
+                        <p>Your Score</p>
+                        <div class="myScore"></div>
+                    </div>
+                    <div class="item" style="width: 155px;">
+                        <p>Computer Score</p>
+                        <div class="compScore"></div>
+                    </div>
+                </div>
+                <div class="turnsLeft">
+                    <p>Result:</p>
+                    <div id="solution" style="font-size: 20px;"> </div>
+                </div>
+            </div>
+
+            <div class="items">                    
+                <div class="item">
+                    <p>Computer Choose:</p>
+                    <div id="textbox"></div>
+                </div>
+                
+            </div>    
+        </div>
+    </div>
+    <div class="footer">
+        <p>@rohitpaul23</p>
+        Thanks to: pinclipart.com
+    </div>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
